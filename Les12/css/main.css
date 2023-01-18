@@ -1,0 +1,107 @@
+footer {
+    width: 10cm;
+    height: 50px;
+    background-color: darkgoldenrod;
+}
+
+header {
+    width:10cm;
+    height: 50px;
+    background-color: brown;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    padding:15px;
+}
+
+img {
+    width: 50px;
+}
+
+table, td {
+    border: 2px solid;  
+    width: 10cm;
+  }
+
+
+/***********id selectors***********/
+
+#title:hover {
+    text-align: center;
+    color: rgb(255, 213, 0);
+    padding:15px;
+}
+
+#aa {
+    background-color: #cc33ff;
+    width: 2cm;
+}
+
+#bb {
+    background-color: #cc33cc;
+}
+
+#cc {
+    background-color: #cc3399;
+    width: 2cm;
+}
+
+#dd {
+    background-color: #cc3366;
+}
+
+#ee {
+    background-color: #cc66ff;
+    width: 2cm;
+}
+
+#ff {
+    background-color: #cc66cc;
+}
+
+#gg {
+    background-color: #cc6699;
+    width: 2cm;
+}
+
+#hh {
+    background-color:#cc6666;
+}
+
+#ii {
+    background-color: indianred;
+    width: 2cm;
+}
+
+#jj {
+    background-color: lightcoral;
+}
+
+#kk {
+    background-color: salmon;
+    width: 2cm;
+}
+
+#ll {
+    background-color: lightsalmon;
+}
+
+#mm {
+    background-color: rgb(105%, 45%, 60%);
+    width: 2cm;
+}
+
+#nn {
+    background-color: rgb(155%, 35%, 40%);
+}
+
+#oo {
+    background-color: rgb(155%, 50%, 50%);
+    width: 2cm;
+}
+
+#pp {
+    background-color: rgb(155%, 50%, 80%);
+}
