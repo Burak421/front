@@ -1,0 +1,147 @@
+body{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    background-color: aquamarine;
+    margin: 0;
+}
+
+.h2-contact,.h2,.p1{
+margin: auto auto;
+min-width:fit-content;
+}
+
+header{
+    background-color: black;
+    margin: auto auto;
+    width:50%;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    margin: auto auto;
+    padding: 20px 20px 0;
+    background-color: rgb(0, 99, 104);
+    width: 50%;
+    font-size: smaller;
+}
+
+.foot-cv{
+    padding:unset;
+}
+
+
+ul, ul a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+  }
+
+li{
+    display: inline-block;
+    height: 20px;
+    width: 90px;
+    padding: 7px;
+    color: white;
+    border-left: 5px solid darkred;
+    border-right: 5px solid black;
+    background-color: rgb(0, 99, 104);
+    text-align: center;
+}
+li:hover{
+    background-color:brown;
+}
+
+/*****************class*****************/
+.img-burak{
+    width:150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.p2{
+    text-align: center;
+    color: white;
+}
+
+.table1,.table2,.table3{
+    font-weight:normal;
+    color: rgb(0, 99, 104);
+    margin: auto auto;
+    border-collapse: collapse;
+    width: 55%;
+}
+
+
+.td1,.td2,.td3{
+    border: solid 2px;
+    text-align: left;
+    padding: 10px;
+}
+
+.caption1, .caption2, .caption3{
+    background-color: rgb(0, 99, 104);
+    border: dotted 4px;
+    padding: 5px;
+}
+
+.inhoud{
+width: 50%;
+margin: auto auto;
+padding: 20px;
+text-align: left;
+line-height: 2;
+background-color:rgb(0, 99, 104);
+}
+
+/********************contact******************/
+
+    .form, input, textarea, select, button{
+        display: block;
+        margin: 0px auto 0px auto;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        width: 300px;
+        box-sizing: border-box;
+    }
+
+    figcaption{
+        background-color:black;
+        color:rgb(0, 99, 104);
+    }
+
+    .form-container{
+        background-color:rgb(0, 99, 104);
+        margin: auto auto;
+        padding: 20px;
+        width: 50%;
+        min-width:fit-content;
+    }
+
+    .div-container{
+        margin: auto auto;
+        padding: 20px;
+        width: 50%;
+        height: 200px;
+        background-color:rgb(0, 99, 104);
+    }
+
+    textarea{
+        height: 100px;
+        padding: 5px 7px;
+    }
+    
+    button:hover{
+        background-color: yellow;
+        vertical-align: text-top;
+    }
+    
+    button:active{
+        background-color:cyan;
+        color: white;
+        vertical-align: text-top;
+        border-radius: 10px; box-shadow: inset 2px 2px 5px blue;
+    }
