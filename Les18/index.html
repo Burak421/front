@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huiswerk</title>
+    <style>
+        body{
+        margin:0;
+        }
+        #content{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        }
+        [class*="col-"] {
+        width: 100%;
+        }
+        @media only screen and (min-width: 768px) {
+        [class*="col-"] {
+        float: left;
+        padding: 10px;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        }
+        header{
+        margin: 5px;
+        width: 100%;
+        height: 8rem;
+        font-size: 4rem;
+        font-style: oblique;
+        background-image: url(img/amst.jpg);
+        background-size: 50rem;
+        background-repeat:repeat;
+        background-position:left;
+        }
+  
+    footer{
+    width: 100%;
+    height: 8rem;
+    margin-top: auto;
+    background-color:rosybrown;
+    }
+    
+    .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: olive;
+    color: white;
+    }
+    .menu li:hover {
+    background-color: green;
+    }
+
+    .stad{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .h3s1{
+        color: white;
+        
+    }
+        #een{
+        margin: 5px;
+        min-height: 300px;
+        background-color: green;
+        border: 3px solid black;
+        }
+        #twee{
+        margin: 5px;
+        background-color: olive;
+        min-height: 300px;
+        clear: fixed;
+        }
+        @media only screen and (max-width: 768px) {
+        #een,#twee{
+        background-color:mediumseagreen;
+        color: white;
+        }
+        }
+
+        .p1{
+            display: inline;
+        }
+        .p2{
+            display: inline;
+            
+        }
+        #artikel1{
+            border: 3px solid black;
+        }
+        #artikel2{
+            margin-top: 5px;
+            border: 3px solid black;
+        }
+        .art1img,.art2img{
+        float: right;
+        width: 150px;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h4 class="stad">Amstelveen</h4>
+    </header>
+    <div id="content">
+    <div class="row">
+        <div class="col-2 menu">
+        <section id="een">
+            <h3 class="h3s1">5 Amstelveen feiten</h3>
+            <ul>
+                <li>Provincie<br>Noord-Holland</li>
+                <li>Inwoners<br>94.396</li>
+                <li>Oppervlakte<br>44,08 km²</li>
+                <li>Postcode(s)<br>1180-1189</li>
+                <li>Coördinaten<br>52° 18' NB, 4° 50' OL</li>
+                </ul>
+        </section>
+        </div>
+        <div class="col-9">
+        <section id="twee">
+        <div id="artikel1">
+        <p class="p1">
+        <img class="art1img" src="img/kers1.png" alt="kers1">
+        Het Bloesempark is een park in de Nederlandse gemeente Amstelveen. Het ligt in het zuidoostelijk deel van het Amsterdamse Bos, nabij De Poel ten zuiden van de A9. Ten oosten van het Bloesempark ligt Brug 1545.
+        In het park zijn 400 sierkersen van de hybride Prunis xyedoensis te vinden. Ze zijn geënt op een rechte onderstam. Jaarlijks staan deze bomen ergens in de periode van maart tot april in bloei met roze en witte bloesems. In dit park komen Nederlanders rond de bloeitijd bij elkaar om de hanami matsuri (kersenbloesemfeest) te vieren en op kleedjes te picknicken.
+        In het Bloesempark in het Amsterdamse Bos staan 400 kersenbomen. In het voorjaar kun je er genieten van de prachtige bloesems en het hele jaardoor ademt de plek een bijzondere sfeer.</p>
+        </div>
+        <div id="artikel2">
+        <p class="p2">
+        <img class="art2img" src="img/kers2.png" alt="kers2">
+        Met Hanami Matsuri, ofwel het Kersenbloesemfeest, vieren Japanners de komst van de lente. Het is traditie om met familie en vrienden onder de bloeiende kersenbomen te picknicken.
+        In het jaar 2000 schonk de Japan Women's Club 400 sierkersen van de hybride Prunus xyedoensis aan Amstelveen. Ze zijn geplant in het Bloesempark in het Amsterdamse Bos als dank voor de Japans-Nederlandse betrekkingen. Deze bomen werden voorzien van naambordjes. Op 200 van de bordjes staat een Nederlandse vrouwennaam en op 200 andere een Japanse vrouwennaam.
+        </p>
+        </div>
+        </section>
+    </div>
+</div>
+<footer></footer>
+    </div>
+</body>
+</html>
