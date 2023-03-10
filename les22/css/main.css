@@ -1,0 +1,42 @@
+body{
+    background-color:khaki;
+}
+
+.card {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+
+}
+
+table{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:navajowhite;
+}
+
+
+blockquote{
+    color: beige;
+
+}
+
+.container-sm{
+    background-color:darkkhaki;
+}
+
+.container-welkom{
+    margin: 2.5rem 0 0 0;
+    padding: 0.5rem;
+    background-color:white;
+}
+
+.container-avatar{
+    margin: 2.5rem 0 2.5rem 0;
+    padding: 0.5rem;
+    background-color:white;
+    text-align: center;
+}
+
+.avatar{
+    width: 5rem;
+}
