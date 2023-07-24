@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
   $(".navbar-toggler").click(function() {
     // Toggle the "show" class on the collapsible div
     $("#navbar1").toggleClass("show");
