@@ -2,6 +2,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Default styles for the cookie banner */
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -12,6 +13,7 @@
   padding: 10px;
   text-align: center;
   font-size: 16px;
+  display: none; /* Hide the banner by default */
   z-index: 9999;
 }
 
@@ -19,7 +21,6 @@
   color: #fff;
   text-decoration: underline;
 }
-
 
 
 
