@@ -2,6 +2,45 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Example CSS for the cookie consent banner */
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 9999; /* Set a high z-index value to ensure it appears above other elements */
+}
+
+.cookie-consent p {
+  margin: 0;
+}
+
+.cookie-consent button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+  .cookie-banner {
+    padding: 5px; /* Reduce the padding for smaller screens */
+    font-size: 50%; /* Adjust the font size for better readability */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .cookie-banner {
+    padding: 5px; /* Reduce the padding for smaller screens */
+    font-size: 70%; /* Adjust the font size for better readability */
+  }
+}
+
 .accordion-button:focus{
 box-shadow: none;
 }
