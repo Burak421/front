@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>Alarmsupport</title>
+<!--Google-Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+<!--Bootstrap-CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">
+<!--JavaScript-->
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--Font-Awesome-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light" id="body">
+   <!-- First Navbar -->
+  <div class="main-navbar">
+ <nav class="navbar navbar-expand navbar-light bg-light py-0 d-block">
+  <div class="container-fluid d-flex align-items-center justify-content-center">
+        <a class="navbar-brand py-0 my-2" href="index.html"><img id="navbarimg" src="img/alarmlogo1.png" alt="Home"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+      <!-- Navbar Content - Collapsible -->
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-text" href="#">Over Ons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-text" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Phone Button - Hide on screens smaller than Medium Screens -->
+      <a class="btn btn-sm btn-danger d-none d-md-block" href="tel:+31657992000">
+        <i class="fas fa-phone fa-sm"></i> 0657992000
+      </a>
+    </div>
+  </nav>
+</div>
+
+      <!-- Second Navbar with social media items -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light py-0 d-md-none sticky-top"><!-- 'd-md-none' hides the navbar on larger screens and 'sticky-top' makes it sticky on small screens -->
+        <div class="container-fluid d-flex align-items-center">
+                  <!--Social Media Items-->
+                  <ul class="navbar-nav d-flex flex-row gap-3 me-auto"><!-- Icons on the left -->
+                    <li class="nav-item d-flex">
+                      <a class="nav-link" href="https://www.facebook.com/profile.php?id=100095215447881">
+                        <i class="fab fa-facebook-f fa-sm"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item d-flex">
+                      <a class="nav-link" href="#">
+                        <i class="fab fa-twitter fa-sm"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item d-flex">
+                      <a class="nav-link" href="https://instagram.com/alarmsupport?igshid=MzNlNGNkZWQ4Mg==">
+                        <i class="fab fa-instagram fa-sm"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item d-flex">
+                      <a class="nav-link" href="#">
+                        <i class="fab fa-linkedin-in fa-sm"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  
+        <!-- Toggler - Right Side -->
+        <button class="navbar-toggler order-last ms-2" type="button" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fas fa-bars fa-sm"></i></span>
+        </button>
+      
+        <!-- Navbar Content - Collapsible -->
+        <div class="collapse navbar-collapse" id="navbar2">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-text d-none d-md-block" href="#">Over Ons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-text d-none d-md-block" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Phone Button - Hide on screens smaller than Medium Screens -->
+      <li class="nav-item d-block">
+        <a class="btn btn-sm btn-warning" href="tel:+31657992000">
+          <i class="fas fa-phone fa-sm"></i> 0657992000
+        </a>
+      </li>
+      
+    </div>
+  </nav>
+  
+
+
+    
+
+
+
+<!--1 container-->
+<section class="container-fluid px-4"> <!--my-2 = margin top 2px-->
+  <div class="card">
+    <div class="row">
+      <div class="col-sm-6 column-custom-max-height d-flex align-items-center justify-content-center">
+        <div class="image-card-1">
+            <img class="card-img-top" src="img/camera2.png" alt="Camera">
+        </div>
+      </div>
+      <div class="col-sm-6 d-flex align-items-center">
+        <div class="card-body d-flex flex-column onecontainerbody">
+          <h2 class="card-title mb-3">Compleet Systeem<br>Inclusief installatie</h2>
+          <p class="card-text mb-4">Stel jouw pakket samen vanaf 1.099,- incl. btw</p>
+          <p class="card-text">Al onze systemen worden geïnstalleerd door onze eigen monteurs die u zullen ontzorgen in het beveiligen van uw huis of bedrijf.
+            <br>Kies voor vrijblijvend advies op locatie!</p>
+          <div class="mt-auto btn-center">
+            <a href="#" class="btn btn-danger">Meer informatie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--2 containers -->
+<section class="container-fluid p-4 my-4">
+  <div class="row g-4">
+    <!-- First container -->
+    <div class="col-sm-6">
+      <div class="card my-3 cardborder flex-fill d-flex flex-column h-100">
+        <div class="image-card-2 cardborder">
+          <img class="card-img-top img-fluid" src="img/camera1.png" alt="Camera" style="max-width: 100%;">
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <h2 class="card-title">Compleet Systeem inclusief installatie.</h2>
+          <p class="card-text flex-grow-1">Stel jouw pakket samen vanaf 1.099,- incl. btw</p>
+          <p class="card-text flex-grow-1">Al onze systemen worden geïnstalleerd door onze eigen monteurs die u zullen ontzorgen in het beveiligen van uw huis of bedrijf.
+            <br>Kies voor vrijblijvend advies op locatie!</p>
+          <div class="mt-auto btn-center">
+            <a href="#" class="btn btn-danger">Meer informatie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second container -->
+    <div class="col-sm-6">
+      <div class="card my-3 cardborder flex-fill d-flex flex-column h-100">
+        <div class="image-card-2 cardborder">
+          <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <h3 class="card-title">De juiste monteur matchen wij voor u</h3>
+          <p class="card-text">Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.</p>
+          <div class="mt-auto btn-center">
+            <a href="#" class="btn btn-danger">Meer informatie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+
+<!--3 containers-->
+<section class="container-fluid p-4 my-4">
+  <div class="row g-4">
+<!-- First Container -->
+    <div class="col-sm-4 col-md-4 d-flex align-items-stretch">
+      <div class="card my-3 cardborder flex-fill d-flex flex-column">
+        <div class="image-card-2 cardborder">
+          <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title">De juiste monteur matchen wij voor u</h3>
+          <p class="card-text">Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.</p>
+          <div class="mt-auto btn-center">
+            <a href="#" class="btn btn-danger">Meer informatie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Second Container-->
+<div class="col-sm-4 col-md-4 d-flex align-items-stretch">
+  <div class="card my-3 cardborder flex-fill d-flex flex-column">
+    <div class="image-card-2 cardborder">
+      <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
+    </div>
+    <div class="card-body d-flex flex-column">
+      <h3 class="card-title">De juiste monteur matchen wij voor u</h3>
+      <p class="card-text">Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.</p>
+      <div class="mt-auto btn-center">
+        <a href="#" class="btn btn-danger">Meer informatie</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Third Container-->
+<div class="col-sm-4 col-md-4 d-flex align-items-stretch">
+  <div class="card my-3 cardborder flex-fill d-flex flex-column">
+    <div class="image-card-2 cardborder">
+      <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
+    </div>
+    <div class="card-body d-flex flex-column">
+      <h3 class="card-title">De juiste monteur matchen wij voor u</h3>
+      <p class="card-text">Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.</p>
+      <div class="mt-auto btn-center">
+        <a href="#" class="btn btn-danger">Meer informatie</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+<!--My card system of 4-->
+<section class="container-fluid p-4 my-4">
+  <div class="row g-2">
+    <div class="col-sm-3 col-md-3 d-flex align-items-stretch">
+      <div class="card my-3">
+        <img class="card-img-top img-fluid" src="https://drive.google.com/uc?export=download&id=1WNu2JkbUrcQOO6LUxbyU-dRGxqv-YBwj" alt="Camera">
+        <div class="card-body d-flex flex-column text-center">
+          <h4 class="card-title mb-4">De juiste monteur matchen wij voor u</h4>
+          <p class="card-text">Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.</p>
+          <div class="mt-auto text-center">
+            <a href="#" class="btn btn-danger">Meer informatie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3 d-flex align-items-stretch">
+      <div class="card my-3">
+        <img class="card-img-top img-fluid" src="https://drive.google.com/uc?export=download&id=1UmHocCAkMp5lT2OiVKkxH-4o4CA4TD6m" alt="Monteur">
+        <div class="card-body d-flex flex-column text-center">
+          <h4 class="card-title mb-4">De juiste monteur matchen wij voor u</h4>
+          <p class="card-text">Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.</p>
+          <div class="mt-auto text-center">
+            <a href="#" class="btn btn-danger">Meer informatie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3 d-flex align-items-stretch">
+      <div class="card my-3">
+        <img class="card-img-top img-fluid" src="https://drive.google.com/uc?export=download&id=1UmHocCAkMp5lT2OiVKkxH-4o4CA4TD6m" alt="Monteur">
+        <div class="card-body d-flex flex-column text-center">
+          <h4 class="card-title mb-4">De juiste monteur matchen wij voor u</h4>
+          <p class="card-text">Niet iedere woning is hetzelfde, en iedere klant is net even anders. de, en iedere klant is net even anders. de, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.</p>
+          <div class="mt-auto text-center">
+            <a href="#" class="btn btn-danger">Meer informatie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3 d-flex align-items-stretch">
+      <div class="card my-3">
+        <img class="card-img-top img-fluid" src="https://drive.google.com/uc?export=download&id=1UmHocCAkMp5lT2OiVKkxH-4o4CA4TD6m" alt="Monteur">
+        <div class="card-body d-flex flex-column text-center">
+          <h4 class="card-title mb-4">De juiste monteur matchen wij voor u</h4>
+          <p class="card-text">Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.</p>
+          <div class="mt-auto text-center">
+            <a href="#" class="btn btn-danger">Meer informatie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!--FAQ-Container-->
+<div class="container">
+  <h2 class="text-center mb-3">Veelgestelde vragen</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+          Mag ik met bewakingscamera's de openbare weg filmen?
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body bg-light">
+          Nee, u mag niet zomaar de openbare weg filmen. Enkel uw eigen bezittingen en terrein mag u filmen met camerabewaking. Echter, in sommige gevallen is het onmogelijk om de openbare weg te vermijden. U moet in dit geval de privacy van andere gebruikers zoveel mogelijk bewaren.
+      </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+          Wat zijn de voordelen van camerabewaking?
+        </button>
+      </h2>
+      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body bg-light">
+              <li>U schrikt mogelijke indringers af. Dit kan een hoop ellende voorkomen.</li>
+              <li>U heeft grondig en belastend bewijsmateriaal tot uw beschikking mocht er toch iets gebeuren.</li>
+              <li>U kunt met een gerust hart op vakantie of naar uw werk. Uw woning of bedrijfspand wordt namelijk 24/7 beveiligd door uw camerabewaking.</li>
+      </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+          Wat kost camerabewaking?
+        </button>
+      </h2>
+      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body bg-light">
+          Dit is verschillend per situatie en materiaal. Wanneer u een groot terrein moet bewaken of speciale wensen heeft, kunnen de kosten oplopen. Er zijn overigens mogelijkheden om camerabewaking te leasen. Wij bieden hiervoor diverse oplossingen op maat aan.
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+          Een WIFI bewakingscamera is  makkelijk te installeren, maar is het wel verstandig?
+        </button>
+      </h2>
+      <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body bg-light">
+          Hoe mooi het ook klinkt, een WIFI camera plaatsen is inderdaad enorm makkelijk, maar met een slecht of wegvallend wifi signaal heeft u alsnog geen beeld en is het een nutteloze camera. Ook is het netjes installeren van een wifi camera nog best een klus. Vergeet niet, goedkoop is duurkoop, en een camera die het niet goed doet heeft uiteindelijk een hoop geld gekost. Wees verstandig en doe het niet, doe het gewoon goed. Een echt goede bewakingscamera is en blijft een bekabelde camera.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+          Kan ik zelf een camerasysteem installeren?
+        </button>
+      </h2>
+      <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body bg-light">
+          Als u zelf handig bent in het trekken van bekabeling en het netjes wegwerken van de kabels, kunt u al een eind komen. Heeft u enige kennis van techniek en IT? Dan kunt u best ver komen. Echter, wij vinden dat beveiliging iets voor de vakman is.
+      </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading6">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+          Wat zijn de belangrijkste voordelen van camerabewaking?
+        </button>
+      </h2>
+      <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body bg-light">
+          Altijd weten wie en wanneer er op uw terrein was, en als er een keer wat gebeurd is, ook zien hoe dit heeft plaatsgevonden. Nooit meer vingertje wijzen maar echt een stuk bewijslast in uw handen. Daarnaast kunt u altijd en overal live met uw telefoon de beelden bekijken. Naast deze voordelen biedt camerabewaking u nog meer voordelen, het schrikt namelijk enorm af en geeft u veel zicht op wat er gebeurt als u er niet bent.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</br>
+<footer class="blockquote-footer bg-light">2023 Alarmsupport.nl <cite title="Source Title">Alle rechten voorbehouden.</cite></footer>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

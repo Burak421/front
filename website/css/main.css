@@ -1,0 +1,169 @@
+#body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordion-button:focus{
+box-shadow: none;
+}
+
+html {
+    font-size: 1rem; /* Equivalent to 16px (smallest base font size for the document) */
+  }
+  
+  body {
+    font-size: 0.875rem; /* Equivalent to 14px (smallest font size for body text) */
+  }
+  
+  .h1-bold,.h2-bold,.h3-bold,.h4-bold,.h5-bold,.h6-bold,.p-bold {
+    font-weight:bold;
+  }
+
+  .card-header .fa {
+  transition: .5s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
+
+.card{
+  background-color:rgb(235, 235, 235);
+}
+
+.card-title,.card-text{
+  word-wrap: break-word;
+  } 
+
+@media (max-width: 576px) {
+  .card-title,
+  .card-text {
+    text-align: center;
+  }
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.nav-link{
+  font-size: 1rem;
+}
+
+.nav-link-text{
+  font-size: 1rem;
+}
+
+#navbarimg {
+  width: 30vw; /* Relative size for the logo based on viewport width */
+}
+
+/* For screens up to 576px */
+@media (max-width: 575px) {
+  #navbarimg {
+    min-width: 70vw;
+  }
+}
+
+/* For screens between 576px and 768px */
+@media (min-width: 576px) and (max-width: 767px) {
+  #navbarimg {
+    min-width: 50vw;
+  }
+}
+
+.image-card-1 {
+  overflow: hidden;
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Keep the image aspect ratio */
+}
+
+
+.image-card-1 img {
+  max-width: 100%; /* Adjust the width as needed */
+  max-height: 100%; /* Adjust the height as needed */
+  border-radius: 50% 0 50% 0; /* Rounded shape for the left corners */
+}
+
+
+/* Container for the image */
+.image-card-2 {
+  overflow: hidden;
+}
+
+/* Image inside the container */
+.image-card-2 img {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Keep the image aspect ratio */
+}
+
+/* Custom CSS to set maximum height for the column */
+.column-custom-max-height {
+  max-height: 300px; /* Set the desired maximum height here */
+  overflow: hidden;
+}
+
+.shadow-text {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@media (min-width: 768px) {
+  .main-navbar {
+    background-color:rgb(22, 22, 22);
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
+
+/* Adjust the padding for the second navbar */
+@media (max-width: 575px) {
+  .navbar-collapse {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    max-width: 50%;
+    height: auto;
+    transition: all 0.4s ease;
+    text-align: right;
+    background-color: #f6ecce;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    visibility: visible;
+  }
+
+  /* Adjust the height when the second navbar is collapsing */
+  .navbar-collapse.collapsing {
+    height: auto !important;
+    margin-right: 0;
+    right: 0;
+    transition: all 0.2s ease;
+  }
+
+  /* Adjust the position when the second navbar is open */
+  .navbar-collapse.show {
+  top: 125px;
+  right: 10px;
+  position: absolute; /* Change position to 'absolute' */
+  width: 100%;
+  z-index: 10; /* Add a higher z-index to keep it above the main navbar */
+}
+}
+
+.cardborder{
+  border-radius: 10% 10% 0 0;
+}
+
+@media (min-width: 768px) {
+.onecontainerbody{
+  padding-left: 50px;
+}
+}
+@media (max-width: 576px) {
+.btn-center{
+text-align: center;
+}
+}
