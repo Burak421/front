@@ -1,48 +1,27 @@
 #body{
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Default styles for the cookie banner */
-.cookie-banner {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  font-size: 16px;
-  display: none; /* Hide the banner by default */
-  z-index: 9999;
-}
-
-.cookie-banner a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-
-
-.accordion-button:focus{
-box-shadow: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
-    font-size: 1rem; /* Equivalent to 16px (smallest base font size for the document) */
+  font-size: 1rem; /* Equivalent to 16px (smallest base font size for the document) */
+}
+  
+body {
+  font-size: 0.875rem; /* Equivalent to 14px (smallest font size for body text) */
   }
   
-  body {
-    font-size: 0.875rem; /* Equivalent to 14px (smallest font size for body text) */
-  }
-  
-  .h1-bold,.h2-bold,.h3-bold,.h4-bold,.h5-bold,.h6-bold,.p-bold {
-    font-weight:bold;
-  }
+.h1-bold,.h2-bold,.h3-bold,.h4-bold,.h5-bold,.h6-bold,.p-bold {
+  font-weight:bold;
+}
 
-  .card-header .fa {
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+.card-header .fa {
   transition: .5s transform ease-in-out;
 }
+
 .card-header .collapsed .fa {
   transform: rotate(90deg);
 }
@@ -173,7 +152,18 @@ html {
   width: 100%;
   z-index: 10;
 }
+
+.navvv{
+  position:absolute;
 }
+
+.navvv2{
+  position:relative;
+}
+
+}
+
+
 
 .cardborder{
   border-radius: 10% 10% 0 0;
