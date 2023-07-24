@@ -167,11 +167,11 @@ html {
 
   /* Adjust the position when the second navbar is open */
   .navbar-collapse.show {
-  top: 125px;
+  top: 6rem;
   right: 10px;
-  position: absolute; /* Change position to 'absolute' */
+  position: fixed;
   width: 100%;
-  z-index: 10; /* Add a higher z-index to keep it above the main navbar */
+  z-index: 10;
 }
 }
 
