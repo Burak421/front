@@ -37,6 +37,8 @@ $(".navbar-toggler").click(handleTogglerClick);
 $(document).click(handleOutsideClick);
 
 // Display the cookie banner if the user has not consented yet
-if (shouldShowCookieBanner()) {
-  document.getElementById("cookiePopup").style.display = "block";
-}
+$(document).ready(function () {
+  if (shouldShowCookieBanner()) {
+    document.getElementById("cookiePopup").style.display = "block";
+  }
+});
