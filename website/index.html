@@ -4,20 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <title>Alarmsupport</title>
-<!--Google-Fonts-->
+<!-- Google-Fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-<!-- Included Bootstrap's CSS library from a CDN -->
+<!-- Bootstrap's CSS library from a CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<!-- Included custom CSS file -->
+<!-- Custom CSS file -->
 <link rel="stylesheet" href="css/main.css">
-<!--Font-Awesome-->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<!-- Font-Awesome-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-light" id="body">
 
-   <!-- First Navbar -->
+
+   <!-- 1st Navbar -->
   <div class="main-navbar">
  <nav class="navbar navbar-expand navbar-light bg-light py-0 d-block">
   <div class="container-fluid d-flex align-items-center justify-content-center">
@@ -37,8 +40,8 @@
           </li>
         </ul>
       </div>
-      <!-- Phone Button - Hide on screens smaller than Medium Screens -->
-      <a class="btn btn-sm btn-danger d-none d-md-block" href="tel:+31657992000">
+      <!-- Phone Button - Hide on screens smaller than Medium size -->
+      <a class="btn btn-sm bg-danger-subtle d-none d-md-block" href="tel:+31657992000">
         <i class="fas fa-phone fa-sm"></i> 0657992000
       </a>
     </div>
@@ -46,7 +49,7 @@
 </div>
 
       <!-- Second Navbar with social media items -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-light py-0 d-md-none sticky-top"><!-- 'd-md-none' hides the navbar on larger screens and 'sticky-top' makes it sticky on small screens -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-danger-subtle py-0 d-md-none sticky-top"><!-- 'd-md-none' hides the navbar on larger screens and 'sticky-top' makes it sticky on small screens -->
         <div class="container-fluid d-flex align-items-center">
                   <!--Social Media Items-->
                   <ul class="navbar-nav d-flex flex-row gap-3 me-auto"><!-- Icons on the left -->
@@ -78,7 +81,7 @@
         </button>
       
         <!-- Navbar Content - Collapsible -->
-        <div class="collapse navbar-collapse" id="navbar2">
+        <div class="collapse navbar-collapse bg-danger-subtle" id="navbar2">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link nav-link-text d-none d-md-block" href="#">Over Ons</a>
@@ -88,25 +91,82 @@
           </li>
         </ul>
       </div>
-      <!-- Phone Button - Hide on screens smaller than Medium Screens -->
+      <!-- Phone Button - Hide on screens larger than Medium size -->
       <li class="nav-item d-block">
-        <a class="btn btn-sm btn-warning" href="tel:+31657992000">
+        <a class="btn btn-sm btn-danger" href="tel:+31657992000">
           <i class="fas fa-phone fa-sm"></i> 0657992000
         </a>
       </li>
-      
     </div>
   </nav>
+
+  
+
+<!--Container with image-->
+  <section class="container-fluid container-with-img bg-danger text-light pt-2">
+      <div class="container justify-content-center align-items-center mt-3">
+        <h3>Camerabewaking</h3>
+        <h1><strong>inclusief installatie</strong></h1>
+          <br>
+          <div class="ps-1">
+            <div class="d-flex align-items-center mb-0">
+              <i class="fa-solid fa-headset fa-2xl"></i>
+              <h4 class="p-2">Eigen helpdesk</h4>
+            </div>
+              
+            <div class="d-flex align-items-center mb-0">
+              <i class="fa-solid fa-certificate fa-2xl"></i>
+              <h4 class="p-2">Opgeleide monteurs</h4>
+            </div>
+          
+            <div class="d-flex align-items-center mb-0">
+              <i class="fa-solid fa-location-crosshairs fa-2xl"></i>
+              <h4 class="p-2">Advies op locatie</h4>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-toolbox fa-2xl"></i>
+              <h4 class="p-2">Altijd inclusief montage</h4>
+            </div>
+        </div>
+      </div>
+  </section>
   
 
 
-    
+  <!--1 container-->
+<section class="container-fluid px-4"> <!--my-2 = margin top 2px-->
+  <div class="card bg-danger-subtle">
+    <div class="row">
+      
+      <div class="col-sm-6 column-custom-max-height d-flex align-items-center justify-content-center">
+        <div class="card-body d-flex flex-column onecontainerbody">
+          <h2 class="card-title mb-3">Compleet Systeem<br>Inclusief installatie</h2>
+          <p class="card-text mb-4">Stel jouw pakket samen vanaf 1.099,- incl. btw</p>
+          <p class="card-text">Al onze systemen worden geïnstalleerd door onze eigen monteurs die u zullen ontzorgen in het beveiligen van uw huis of bedrijf.
+            <br>Kies voor vrijblijvend advies op locatie!</p>
+          <div class="mt-auto btn-center">
+            <a href="#" class="btn btn-danger">Meer informatie</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-6 d-flex align-items-center">
+        <div class="image-card-1">
+          <img class="card-img-top" src="img/camera2.png" alt="Camera">
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
 <!--1 container-->
 <section class="container-fluid px-4"> <!--my-2 = margin top 2px-->
-  <div class="card">
+  <div class="card bg-danger-subtle">
     <div class="row">
       <div class="col-sm-6 column-custom-max-height d-flex align-items-center justify-content-center">
         <div class="image-card-1">
@@ -133,7 +193,7 @@
   <div class="row g-4">
     <!-- First container -->
     <div class="col-sm-6">
-      <div class="card my-3 cardborder flex-fill d-flex flex-column h-100">
+      <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column h-100">
         <div class="image-card-2 cardborder">
           <img class="card-img-top img-fluid" src="img/camera1.png" alt="Camera" style="max-width: 100%;">
         </div>
@@ -151,7 +211,7 @@
 
     <!-- Second container -->
     <div class="col-sm-6">
-      <div class="card my-3 cardborder flex-fill d-flex flex-column h-100">
+      <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column h-100">
         <div class="image-card-2 cardborder">
           <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
         </div>
@@ -173,7 +233,7 @@
   <div class="row g-4">
 <!-- First Container -->
     <div class="col-sm-4 col-md-4 d-flex align-items-stretch">
-      <div class="card my-3 cardborder flex-fill d-flex flex-column">
+      <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column">
         <div class="image-card-2 cardborder">
           <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
         </div>
@@ -188,7 +248,7 @@
     </div>
 <!--Second Container-->
 <div class="col-sm-4 col-md-4 d-flex align-items-stretch">
-  <div class="card my-3 cardborder flex-fill d-flex flex-column">
+  <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column">
     <div class="image-card-2 cardborder">
       <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
     </div>
@@ -203,7 +263,7 @@
 </div>
 <!--Third Container-->
 <div class="col-sm-4 col-md-4 d-flex align-items-stretch">
-  <div class="card my-3 cardborder flex-fill d-flex flex-column">
+  <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column">
     <div class="image-card-2 cardborder">
       <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
     </div>
@@ -226,7 +286,7 @@
 <section class="container-fluid p-4 my-4">
   <div class="row g-2">
     <div class="col-sm-3 col-md-3 d-flex align-items-stretch">
-      <div class="card my-3">
+      <div class="card bg-danger-subtle my-3">
         <img class="card-img-top img-fluid" src="https://drive.google.com/uc?export=download&id=1WNu2JkbUrcQOO6LUxbyU-dRGxqv-YBwj" alt="Camera">
         <div class="card-body d-flex flex-column text-center">
           <h4 class="card-title mb-4">De juiste monteur matchen wij voor u</h4>
@@ -238,7 +298,7 @@
       </div>
     </div>
     <div class="col-sm-3 col-md-3 d-flex align-items-stretch">
-      <div class="card my-3">
+      <div class="card bg-danger-subtle my-3">
         <img class="card-img-top img-fluid" src="https://drive.google.com/uc?export=download&id=1UmHocCAkMp5lT2OiVKkxH-4o4CA4TD6m" alt="Monteur">
         <div class="card-body d-flex flex-column text-center">
           <h4 class="card-title mb-4">De juiste monteur matchen wij voor u</h4>
@@ -250,7 +310,7 @@
       </div>
     </div>
     <div class="col-sm-3 col-md-3 d-flex align-items-stretch">
-      <div class="card my-3">
+      <div class="card bg-danger-subtle my-3">
         <img class="card-img-top img-fluid" src="https://drive.google.com/uc?export=download&id=1UmHocCAkMp5lT2OiVKkxH-4o4CA4TD6m" alt="Monteur">
         <div class="card-body d-flex flex-column text-center">
           <h4 class="card-title mb-4">De juiste monteur matchen wij voor u</h4>
@@ -262,7 +322,7 @@
       </div>
     </div>
     <div class="col-sm-3 col-md-3 d-flex align-items-stretch">
-      <div class="card my-3">
+      <div class="card bg-danger-subtle my-3">
         <img class="card-img-top img-fluid" src="https://drive.google.com/uc?export=download&id=1UmHocCAkMp5lT2OiVKkxH-4o4CA4TD6m" alt="Monteur">
         <div class="card-body d-flex flex-column text-center">
           <h4 class="card-title mb-4">De juiste monteur matchen wij voor u</h4>
@@ -365,13 +425,19 @@
 </div>
 </br>
 <footer class="blockquote-footer bg-light">2023 Alarmsupport.nl <cite title="Source Title">Alle rechten voorbehouden.</cite></footer>
-<!-- Included Bootstrap's JavaScript library (including Popper.js) from a CDN -->
+<!-- Bootstrap's JavaScript library (including Popper.js) from a CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Included jQuery library from a CDN -->
+<!-- jQuery library from a CDN -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-<!-- Included custom JavaScript file -->
+  <!-- AOS JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<!-- Custom JavaScript file -->
 <script src="js/script.js"></script>
 </body>
 </html>
