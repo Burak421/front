@@ -26,9 +26,6 @@ body {
   transform: rotate(90deg);
 }
 
-.card{
-  background-color:rgb(235, 235, 235);
-}
 
 .card-title,.card-text{
   word-wrap: break-word;
@@ -110,7 +107,6 @@ body {
 
 @media (min-width: 768px) {
   .main-navbar {
-    background-color:rgb(22, 22, 22);
     position: sticky;
     top: 0;
     right: 0;
@@ -118,7 +114,6 @@ body {
     z-index: 1030;
   }
 }
-
 
 /* Adjust the padding for the second navbar */
 @media (max-width: 575px) {
@@ -130,7 +125,7 @@ body {
     height: auto;
     transition: all 0.4s ease;
     text-align: right;
-    background-color: #f6ecce;
+    background-color: #eecece;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     visibility: visible;
@@ -152,15 +147,6 @@ body {
   width: 100%;
   z-index: 10;
 }
-
-.navvv{
-  position:absolute;
-}
-
-.navvv2{
-  position:relative;
-}
-
 }
 
 
@@ -179,3 +165,19 @@ body {
 text-align: center;
 }
 }
+
+.container-with-img{
+  height: 24rem;
+  background-image: url('https://drive.google.com/uc?export=download&id=1HwmHYrtg8jqneCEZz9JZfRYhLAtR6Cw5'), linear-gradient(#ffffff68, #ffffff00);
+  background-size: 16rem;
+  background-repeat: no-repeat;
+  background-position: right 20rem bottom;
+}
+
+@media (max-width: 768px) {
+  .container-with-img{
+    height: 22rem;
+    background-size: 13rem;
+    background-position: right 2rem bottom;
+  }
+  }
