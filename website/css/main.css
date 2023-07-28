@@ -57,14 +57,14 @@ body {
 }
 
 /* For screens up to 576px */
-@media (max-width: 575px) {
+@media (max-width: 577px) {
   #navbarimg {
     min-width: 70vw;
   }
 }
 
 /* For screens between 576px and 768px */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 767px) {
   #navbarimg {
     min-width: 50vw;
   }
@@ -105,8 +105,9 @@ body {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+
 @media (min-width: 768px) {
-  .main-navbar {
+  .first-navbar {
     position: sticky;
     top: 0;
     right: 0;
@@ -115,8 +116,7 @@ body {
   }
 }
 
-/* Adjust the padding for the second navbar */
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .navbar-collapse {
     position: fixed;
     top: -100%;
@@ -133,7 +133,7 @@ body {
 
   /* Adjust the height when the second navbar is collapsing */
   .navbar-collapse.collapsing {
-    height: auto !important;
+    height: auto;
     margin-right: 0;
     right: 0;
     transition: all 0.2s ease;
@@ -166,18 +166,24 @@ text-align: center;
 }
 }
 
-.container-with-img{
-  height: 24rem;
-  background-image: url('https://drive.google.com/uc?export=download&id=1HwmHYrtg8jqneCEZz9JZfRYhLAtR6Cw5'), linear-gradient(#ffffff68, #ffffff00);
-  background-size: 16rem;
+.section-with-img{
+  height: 25rem;
+  background-image: url('https://drive.google.com/uc?export=download&id=1HwmHYrtg8jqneCEZz9JZfRYhLAtR6Cw5');
+  background-size: 17rem;
   background-repeat: no-repeat;
-  background-position: right 20rem bottom;
+  background-position:bottom 0rem center;
 }
 
-@media (max-width: 768px) {
-  .container-with-img{
-    height: 22rem;
-    background-size: 13rem;
-    background-position: right 2rem bottom;
+@media (max-width: 766px) {
+  .section-with-img {
+    background-size: 15rem;
+    background-position: right 1em bottom;
   }
   }
+
+
+@media (max-width: 413px) {
+.smaller-font {
+ font-size: 1rem; 
+}
+}
