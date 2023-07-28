@@ -21,7 +21,7 @@
 
 
    <!-- 1st Navbar -->
-  <div class="main-navbar">
+  <div class="first-navbar">
  <nav class="navbar navbar-expand navbar-light bg-light py-0 d-block">
   <div class="container-fluid d-flex align-items-center justify-content-center">
         <a class="navbar-brand py-0 my-2" href="index.html"><img id="navbarimg" src="img/alarmlogo1.png" alt="Home"></a>
@@ -41,131 +41,137 @@
         </ul>
       </div>
       <!-- Phone Button - Hide on screens smaller than Medium size -->
+      <li class="nav-item d-flex">
       <a class="btn btn-sm bg-danger-subtle d-none d-md-block" href="tel:+31657992000">
         <i class="fas fa-phone fa-sm"></i> 0657992000
       </a>
+      </li>
+
+
     </div>
   </nav>
 </div>
 
-      <!-- Second Navbar with social media items -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-danger-subtle py-0 d-md-none sticky-top"><!-- 'd-md-none' hides the navbar on larger screens and 'sticky-top' makes it sticky on small screens -->
+      <!-- 2nd Navbar with social media items -->
+      <nav class="navbar bg-light sticky-top py-0 d-md-none">
         <div class="container-fluid d-flex align-items-center">
-                  <!--Social Media Items-->
-                  <ul class="navbar-nav d-flex flex-row gap-3 me-auto"><!-- Icons on the left -->
-                    <li class="nav-item d-flex">
-                      <a class="nav-link" href="https://www.facebook.com/profile.php?id=100095215447881">
-                        <i class="fab fa-facebook-f fa-sm"></i>
-                      </a>
-                    </li>
-                    <li class="nav-item d-flex">
-                      <a class="nav-link" href="#">
-                        <i class="fab fa-twitter fa-sm"></i>
-                      </a>
-                    </li>
-                    <li class="nav-item d-flex">
-                      <a class="nav-link" href="https://instagram.com/alarmsupport?igshid=MzNlNGNkZWQ4Mg==">
-                        <i class="fab fa-instagram fa-sm"></i>
-                      </a>
-                    </li>
-                    <li class="nav-item d-flex">
-                      <a class="nav-link" href="#">
-                        <i class="fab fa-linkedin-in fa-sm"></i>
-                      </a>
-                    </li>
-                  </ul>
-                  
-        <!-- Toggler - Right Side -->
-        <button class="navbar-toggler order-last ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar2" aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="fas fa-bars fa-sm"></i></span>
-        </button>
-      
-        <!-- Navbar Content - Collapsible -->
-        <div class="collapse navbar-collapse bg-danger-subtle" id="navbar2">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-link-text d-none d-md-block" href="#">Over Ons</a>
+          <ul class="navbar-nav d-flex flex-row gap-3 me-auto">
+            <li class="nav-item d-flex">
+              <a class="nav-link" href="https://www.facebook.com/profile.php?id=100095215447881">
+                <i class="fab fa-facebook-f fa-sm"></i>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-text d-none d-md-block" href="#">Contact</a>
+            <li class="nav-item d-flex">
+              <a class="nav-link" href="#">
+                <i class="fab fa-twitter fa-sm"></i>
+              </a>
+            </li>
+            <li class="nav-item d-flex">
+              <a class="nav-link" href="https://instagram.com/alarmsupport?igshid=MzNlNGNkZWQ4Mg==">
+                <i class="fab fa-instagram fa-sm"></i>
+              </a>
+            </li>
+            <li class="nav-item d-flex">
+              <a class="nav-link" href="#">
+                <i class="fab fa-linkedin-in fa-sm"></i>
+              </a>
+            </li>
+          </ul>
+          <li class="nav-item d-flex">
+            <a class="btn btn-sm btn-danger" href="tel:+31657992000">
+              <i class="fas fa-phone fa-sm"></i> 0657992000
+            </a>
           </li>
-        </ul>
-      </div>
-      <!-- Phone Button - Hide on screens larger than Medium size -->
-      <li class="nav-item d-block">
-        <a class="btn btn-sm btn-danger" href="tel:+31657992000">
-          <i class="fas fa-phone fa-sm"></i> 0657992000
-        </a>
-      </li>
-    </div>
-  </nav>
+          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span><i class="fas fa-navicon"></i></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Alarmsupport</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Over Ons</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Camerabewaking</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Bekabelde camerasystemen</a></li>
+                    <li><a class="dropdown-item" href="#">Draadloze camerasystemen</a></li>
+                </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Stel jouw pakket samen -></a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Klantenservice
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                      <li><a class="dropdown-item" href="#">Helpcentrum</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Bestellen</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
   
 
-<!--Container with image-->
-  <section class="container-fluid container-with-img bg-danger text-light pt-2">
-      <div class="container justify-content-center align-items-center mt-3">
-        <h3>Camerabewaking</h3>
-        <h1><strong>inclusief installatie</strong></h1>
+<!--1st Container with image-->
+<!--Image is inside section-with-img as custom CSS -->
+  <section class="container-fluid d-flex flex-row section-with-img bg-danger-subtle mb-2 pt-2">
+      <div class="container col-8 align-items-center mt-2">
+        <h3 class="text-nowrap"><span>Camerabewaking</span></h3>
+        <h1 class="text-nowrap"><span><strong>inclusief installatie</strong></span></h1>
           <br>
-          <div class="ps-1">
+          <div class="m-0 ps-1">
             <div class="d-flex align-items-center mb-0">
               <i class="fa-solid fa-headset fa-2xl"></i>
-              <h4 class="p-2">Eigen helpdesk</h4>
+              <h4 class="smaller-font mx-3 py-2 text-nowrap">Eigen helpdesk</h4>
             </div>
               
             <div class="d-flex align-items-center mb-0">
               <i class="fa-solid fa-certificate fa-2xl"></i>
-              <h4 class="p-2">Opgeleide monteurs</h4>
+              <h4 class="smaller-font mx-3 py-2 text-nowrap">Opgeleide monteurs</h4>
             </div>
           
             <div class="d-flex align-items-center mb-0">
               <i class="fa-solid fa-location-crosshairs fa-2xl"></i>
-              <h4 class="p-2">Advies op locatie</h4>
+              <h4 class="smaller-font mx-3 py-2 text-nowrap">Advies op locatie</h4>
             </div>
 
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center mt-0">
               <i class="fa-solid fa-toolbox fa-2xl"></i>
-              <h4 class="p-2">Altijd inclusief montage</h4>
+              <h4 class="smaller-font mx-3 py-2 text-nowrap">Altijd inclusief montage</h4>
             </div>
+        </div>
+      </div>
+      <div class="container col-4 justify-content-center align-items-center mt-auto" style="max-width: 20rem;">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="d-none d-md-block">
+            <div class="d-flex flex-column align-items-center rounded-top border-dark bg-light p-3">
+              <h3>Stel jouw pakket samen vanaf 1.099,- incl. btw</h3>
+              <p>Al onze systemen worden geïnstalleerd door onze eigen monteurs die u zullen ontzorgen in het beveiligen van uw huis of bedrijf. Kies voor vrijblijvend advies op locatie!</p>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-outline-danger btn-sm rounded-pill me-2"><span class="text-nowrap">Bel me terug</span></button>
+                  <button type="button" class="btn btn-success btn-sm rounded-pill"><span class="text-nowrap">Gratis offerte <br> op maat</span></button>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
   </section>
-  
-
-
-  <!--1 container-->
-<section class="container-fluid px-4"> <!--my-2 = margin top 2px-->
-  <div class="card bg-danger-subtle">
-    <div class="row">
-      
-      <div class="col-sm-6 column-custom-max-height d-flex align-items-center justify-content-center">
-        <div class="card-body d-flex flex-column onecontainerbody">
-          <h2 class="card-title mb-3">Compleet Systeem<br>Inclusief installatie</h2>
-          <p class="card-text mb-4">Stel jouw pakket samen vanaf 1.099,- incl. btw</p>
-          <p class="card-text">Al onze systemen worden geïnstalleerd door onze eigen monteurs die u zullen ontzorgen in het beveiligen van uw huis of bedrijf.
-            <br>Kies voor vrijblijvend advies op locatie!</p>
-          <div class="mt-auto btn-center">
-            <a href="#" class="btn btn-danger">Meer informatie</a>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-sm-6 d-flex align-items-center">
-        <div class="image-card-1">
-          <img class="card-img-top" src="img/camera2.png" alt="Camera">
-      </div>
-
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
 
-<!--1 container-->
-<section class="container-fluid px-4"> <!--my-2 = margin top 2px-->
+<!--1 container
+<section class="container-fluid px-4">
   <div class="card bg-danger-subtle">
     <div class="row">
       <div class="col-sm-6 column-custom-max-height d-flex align-items-center justify-content-center">
@@ -186,54 +192,15 @@
       </div>
     </div>
   </div>
-</section>
-
-<!--2 containers -->
-<section class="container-fluid p-4 my-4">
-  <div class="row g-4">
-    <!-- First container -->
-    <div class="col-sm-6">
-      <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column h-100">
-        <div class="image-card-2 cardborder">
-          <img class="card-img-top img-fluid" src="img/camera1.png" alt="Camera" style="max-width: 100%;">
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <h2 class="card-title">Compleet Systeem inclusief installatie.</h2>
-          <p class="card-text flex-grow-1">Stel jouw pakket samen vanaf 1.099,- incl. btw</p>
-          <p class="card-text flex-grow-1">Al onze systemen worden geïnstalleerd door onze eigen monteurs die u zullen ontzorgen in het beveiligen van uw huis of bedrijf.
-            <br>Kies voor vrijblijvend advies op locatie!</p>
-          <div class="mt-auto btn-center">
-            <a href="#" class="btn btn-danger">Meer informatie</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Second container -->
-    <div class="col-sm-6">
-      <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column h-100">
-        <div class="image-card-2 cardborder">
-          <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <h3 class="card-title">De juiste monteur matchen wij voor u</h3>
-          <p class="card-text">Niet iedere woning is hetzelfde, en iedere klant is net even anders. Zo ook onze monteurs, wij matchen de juiste installatie monteur op het juiste project.</p>
-          <div class="mt-auto btn-center">
-            <a href="#" class="btn btn-danger">Meer informatie</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </section>
+</section>-->
 
 
 <!--3 containers-->
-<section class="container-fluid p-4 my-4">
+<section class="container-fluid d-flex flex-row bg-danger-subtle mb-2 pt-2">
   <div class="row g-4">
 <!-- First Container -->
     <div class="col-sm-4 col-md-4 d-flex align-items-stretch">
-      <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column">
+      <div class="card bg-light my-3 cardborder flex-fill d-flex flex-column">
         <div class="image-card-2 cardborder">
           <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
         </div>
@@ -248,7 +215,7 @@
     </div>
 <!--Second Container-->
 <div class="col-sm-4 col-md-4 d-flex align-items-stretch">
-  <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column">
+  <div class="card bg-light my-3 cardborder flex-fill d-flex flex-column">
     <div class="image-card-2 cardborder">
       <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
     </div>
@@ -263,7 +230,7 @@
 </div>
 <!--Third Container-->
 <div class="col-sm-4 col-md-4 d-flex align-items-stretch">
-  <div class="card bg-danger-subtle my-3 cardborder flex-fill d-flex flex-column">
+  <div class="card bg-light my-3 cardborder flex-fill d-flex flex-column">
     <div class="image-card-2 cardborder">
       <img class="card-img-top img-fluid" src="img/alarmmonteur.png" alt="Monteur">
     </div>
@@ -433,11 +400,6 @@
 
   <!-- AOS JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
-<!-- Custom JavaScript file -->
-<script src="js/script.js"></script>
 </body>
 </html>
