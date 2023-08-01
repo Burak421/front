@@ -54,7 +54,7 @@
 
       <!-- 2nd Navbar with social media items -->
       <nav class="navbar bg-light sticky-top py-0 d-md-none">
-        <div class="container-fluid d-flex align-items-center">
+        <div class="container-fluid d-flex align-items-center g-2">
           <ul class="navbar-nav d-flex flex-row gap-3 me-auto">
             <li class="nav-item d-flex">
               <a class="nav-link" href="https://www.facebook.com/profile.php?id=100095215447881">
@@ -87,20 +87,21 @@
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Alarmsupport</h5>
+              <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/alarmlogo1.png" alt="logo" style="width: 10rem;"></div>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Over Ons</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Stel jouw pakket samen <i class="fa-regular fa-circle-right fa-sm"></i></a></li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Camerabewaking</a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Bekabelde camerasystemen</a></li>
                     <li><a class="dropdown-item" href="#">Draadloze camerasystemen</a></li>
                 </ul>
                 </li>
-                <li><a class="dropdown-item" href="#">Stel jouw pakket samen -></a></li>
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Klantenservice
@@ -124,12 +125,13 @@
 
 <!--1st Container with image-->
 <!--Image is inside section-with-img as custom CSS -->
-  <section class="container-fluid d-flex flex-row section-with-img bg-danger-subtle mb-2 pt-2">
-      <div class="container col-8 align-items-center mt-2">
+  <section class="d-flex section-with-img bg-danger-subtle my-2 px-4">
+      <div class="col-8 mb-auto">
+        <div class="m-0 py-3">
         <h3 class="text-nowrap"><span>Camerabewaking</span></h3>
-        <h1 class="text-nowrap"><span><strong>inclusief installatie</strong></span></h1>
-          <br>
-          <div class="m-0 ps-1">
+        <h5 class="text-nowrap smaller-font"><span><strong>Inclusief installatie</strong></span></h5>
+        </div>
+        <div class="m-0">
             <div class="d-flex align-items-center mb-0">
               <i class="fa-solid fa-headset fa-2xl"></i>
               <h4 class="smaller-font mx-3 py-2 text-nowrap">Eigen helpdesk</h4>
@@ -151,48 +153,109 @@
             </div>
         </div>
       </div>
-      <div class="container col-4 justify-content-center align-items-center mt-auto" style="max-width: 20rem;">
-        <div class="d-flex justify-content-center align-items-center">
-            <div class="d-none d-md-block">
-            <div class="d-flex flex-column align-items-center rounded-top border-dark bg-light p-3">
+      <div class="container-fluid col-4 justify-content-center align-items-center mb-auto" style="max-width: 17rem;">
+        <div class="d-none d-md-block">
+            <div class="d-flex flex-column align-items-center bg-light pt-3 px-2">
               <h3>Stel jouw pakket samen vanaf 1.099,- incl. btw</h3>
               <p>Al onze systemen worden geïnstalleerd door onze eigen monteurs die u zullen ontzorgen in het beveiligen van uw huis of bedrijf. Kies voor vrijblijvend advies op locatie!</p>
-                <div class="d-flex justify-content-center">
-                  <button type="button" class="btn btn-outline-danger btn-sm rounded-pill me-2"><span class="text-nowrap">Bel me terug</span></button>
-                  <button type="button" class="btn btn-success btn-sm rounded-pill"><span class="text-nowrap">Gratis offerte <br> op maat</span></button>
+                <div class="d-flex justify-content-center pb-2 gap-1">
+                  <button type="button" class="btn btn-success btn-sm rounded-4"><span class="text-nowrap">Bel me terug</span></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm rounded-4"><span class="text-nowrap">Gratis offerte</span></button>
                 </div>
             </div>
-          </div>
         </div>
       </div>
   </section>
+  
 
-
-
-
-<!--1 container
-<section class="container-fluid px-4">
-  <div class="card bg-danger-subtle">
-    <div class="row">
-      <div class="col-sm-6 column-custom-max-height d-flex align-items-center justify-content-center">
-        <div class="image-card-1">
-            <img class="card-img-top" src="img/camera2.png" alt="Camera">
-        </div>
-      </div>
-      <div class="col-sm-6 d-flex align-items-center">
-        <div class="card-body d-flex flex-column onecontainerbody">
-          <h2 class="card-title mb-3">Compleet Systeem<br>Inclusief installatie</h2>
-          <p class="card-text mb-4">Stel jouw pakket samen vanaf 1.099,- incl. btw</p>
-          <p class="card-text">Al onze systemen worden geïnstalleerd door onze eigen monteurs die u zullen ontzorgen in het beveiligen van uw huis of bedrijf.
-            <br>Kies voor vrijblijvend advies op locatie!</p>
-          <div class="mt-auto btn-center">
-            <a href="#" class="btn btn-danger">Meer informatie</a>
-          </div>
+<!--Bootstrap carousel-->
+<div class="container-fluid bg-light">
+<h2 class="d-flex flex-column text-center"><strong>Camera bewaking met diverse pakketten</strong></h2>
+<div id="carousel" class="carousel slide">
+  <div class="carousel-indicators d-sm-none">
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="img-container rounded-4">
+      <a href="#"><img src="img/tussenwoning.png" class="d-block w-100 img-overlay" alt="tussenwoning"></a>
+    </div>
+      <div class="carousel-caption p-0">
+        <div class="d-flex flex-column just align-items-md-start align-items-sm-center carousel-text" aria-disabled="true">
+        <h5 class="carousel"><strong>Tussenwoning</strong></h5>
+        <p class="carousel">Vanaf €1349</p>
+        <span class="carousel d-none d-md-block">Meer informatie <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
         </div>
       </div>
     </div>
+    <div class="carousel-item">
+      <div class="img-container rounded-4">
+      <a href="#"><img src="img/vrijstaand.png" class="d-block w-100 img-overlay" alt="vrijstaand"></a>
+      <div class="carousel-caption p-0">
+        <div class="d-flex flex-column align-items-md-start align-items-sm-center">
+        <h5 class="carousel"><strong>Vrijstaand</strong></h5>
+        <p class="carousel">Vanaf €1599</p>
+        <span class="carousel d-none d-md-block">Meer informatie <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="img-container rounded-4">
+      <a href="#"><img src="img/hoekwoning.png" class="d-block w-100 img-overlay" alt="hoekwoning">    </a>
+      <div class="carousel-caption p-0">
+        <div class="d-flex flex-column align-items-md-start align-items-sm-center">
+        <h5 class="carousel"><strong>Hoekwoning</strong></h5>
+        <p class="carousel">Vanaf €1899</p>
+        <span class="carousel d-none d-md-block">Meer informatie <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="img-container rounded-4">
+      <a href="#"><img src="img/bedrijfspand.png" class="d-block w-100 img-overlay" alt="bedrijfspand"></a>
+      <div class="carousel-caption p-0">
+        <div class="d-flex flex-column align-items-md-start align-items-sm-center">
+        <h5 class="carousel"><strong>Bedrijfspand</strong></h5>
+        <p class="carousel">Vanaf €2399</p>
+        <span class="carousel d-none d-md-block">Meer informatie <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+    </div>
   </div>
-</section>-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+  <!--2nd Container-->
+  <section class="position-relative my-3">
+    <div class="row g-0">
+      <div class="section-with-img-2 img-fluid mt-0 p-0 col-12" style="background-image: url('img/klantenservice.png')">
+      <div class="col-md-5 col-12 position-absolute top-0 start-0 d-flex align-items-center h-100">
+        <div class="bg-light bg-opacity-75 text-center rounded-4 p-3">
+            <i class="fa-solid fa-headset fa-2xl"></i>
+            <h5 class="pt-3"><strong>Klantenservice en Ondersteuning</strong></h5>
+            <p class="pt-3">Onze klantenservice bij Alarmsupport staat voor professionaliteit en toewijding. Wij begrijpen het belang van een uitstekende ondersteuning en zijn er trots op om u te helpen bij al uw vragen en behoeften. Ons deskundige team staat klaar om u vriendelijk en efficiënt van dienst te zijn, zodat u met vertrouwen kunt rekenen op de beste service en gemoedsrust.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
 
 
 <!--3 containers-->
@@ -304,6 +367,25 @@
 </section>
 <br>
 
+<div class="d-inline-flex mb-3">
+  <button type="button" class="btn btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#faqModal1">
+    Mag ik met bewakingscamera's de openbare weg filmen?
+  </button>
+</div>
+<div class="modal fade" id="faqModal1" tabindex="-1" aria-labelledby="faqModal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="faqModal1Label">Mag ik met bewakingscamera's de openbare weg filmen?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Nee, u mag niet zomaar de openbare weg filmen. Enkel uw eigen bezittingen en terrein mag u filmen met camerabewaking. Echter, in sommige gevallen is het onmogelijk om de openbare weg te vermijden. U moet in dit geval de privacy van andere gebruikers zoveel mogelijk bewaren.
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--FAQ-Container-->
 <div class="container">
   <h2 class="text-center mb-3">Veelgestelde vragen</h2>
@@ -396,10 +478,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- jQuery library from a CDN -->
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- AOS JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+<!-- Custom JavaScript file -->
+<script src="js/script2.js"></script>
 
 </body>
 </html>
