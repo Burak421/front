@@ -236,15 +236,24 @@ body {
   }
 }
 
+@media (max-width: 575px) {
+  .carousel-inner {
+    flex-wrap: nowrap;
+  }
+}
+
+.carousel-inner {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .carousel-item {
 margin: 0;
 padding: 10px;
 }  
 
-.carousel-inner {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+
 
 @media (min-width: 576px) {
   /* Hide previous and next buttons */
