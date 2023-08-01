@@ -1,0 +1,293 @@
+#body{
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 1rem; /* Equivalent to 16px (smallest base font size for the document) */
+}
+  
+body {
+  font-size: 0.875rem; /* Equivalent to 14px (smallest font size for body text) */
+  }
+  
+@media (max-width: 576px) {
+  h2.text-center {
+  font-size: 1.2rem;
+  }
+}
+
+
+
+.bold {
+  font-weight:bold;
+}
+
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+.card-header .fa {
+  transition: .5s transform ease-in-out;
+}
+
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
+
+
+.card-title,.card-text{
+  word-wrap: break-word;
+  } 
+
+@media (max-width: 576px) {
+  .card-title,
+  .card-text {
+    text-align: center;
+  }
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.nav-link{
+  font-size: 1rem;
+}
+
+.nav-link-text{
+  font-size: 1rem;
+}
+
+#navbarimg {
+  width: 30vw; /* Relative size for the logo based on viewport width */
+}
+
+/* For screens up to 576px */
+@media (max-width: 577px) {
+  #navbarimg {
+    min-width: 70vw;
+  }
+}
+
+/* For screens between 576px and 768px */
+@media (min-width: 577px) and (max-width: 767px) {
+  #navbarimg {
+    min-width: 50vw;
+  }
+}
+
+.image-card-1 {
+  overflow: hidden;
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Keep the image aspect ratio */
+}
+
+
+.image-card-1 img {
+  max-width: 100%; /* Adjust the width as needed */
+  max-height: 100%; /* Adjust the height as needed */
+  border-radius: 50% 0 50% 0; /* Rounded shape for the left corners */
+}
+
+
+/* Container for the image */
+.image-card-2 {
+  overflow: hidden;
+}
+
+/* Image inside the container */
+.image-card-2 img {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Keep the image aspect ratio */
+}
+
+/* Custom CSS to set maximum height for the column */
+.column-custom-max-height {
+  max-height: 300px; /* Set the desired maximum height here */
+  overflow: hidden;
+}
+
+.shadow-text {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+@media (min-width: 768px) {
+  .first-navbar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-collapse {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    max-width: 50%;
+    height: auto;
+    transition: all 0.4s ease;
+    text-align: right;
+    background-color: #eecece;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    visibility: visible;
+  }
+
+  /* Adjust the height when the second navbar is collapsing */
+  .navbar-collapse.collapsing {
+    height: auto;
+    margin-right: 0;
+    right: 0;
+    transition: all 0.2s ease;
+  }
+
+  /* Adjust the position when the second navbar is open */
+  .navbar-collapse.show {
+  top: 6rem;
+  right: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+}
+
+
+
+.cardborder{
+  border-radius: 10% 10% 0 0;
+}
+
+@media (min-width: 768px) {
+  .onecontainerbody{
+    padding-left: 50px;
+}
+}
+@media (max-width: 576px) {
+  .btn-center{
+    text-align: center;
+  }
+}
+
+.section-with-img {
+  height: 23rem;
+  background-image: url('../img/jaap.png');
+  background-size: 13rem;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media (max-width: 576px) {
+  .section-with-img {
+    height: 18rem;
+    background-size: 10rem;
+    background-position: right 3rem bottom;
+
+  }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .section-with-img {
+      height: 20rem;
+      background-size: 11rem;
+      background-position: right 3rem bottom;
+    }
+    }
+
+    .section-with-img-2 {
+      height: 25rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+
+  @media (max-width: 470px) {
+.smaller-font {
+ font-size: 1rem; 
+ color:rgb(255, 255, 255);
+ text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+}
+}
+
+@media (min-width: 470px) and (max-width: 576px) {
+  .smaller-font {
+   font-size: 1rem; 
+   color: rgb(0, 0, 0);
+  }
+  }
+
+/*Bootstrap carousel*/
+@media (min-width: 576px) {
+    .carousel-inner {
+    display: flex;
+  }
+    .carousel-item {
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    flex: 0 0 calc(100%/4);
+  }
+}
+
+.carousel-item {
+margin: 0;
+padding: 10px;
+}  
+
+.carousel-inner {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 576px) {
+  /* Hide previous and next buttons */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 850px) {
+h5.carousel {
+font-size: 0.85rem;
+}
+p.carousel {
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+  }
+span.carousel {
+  font-size: 0.7rem;
+}
+
+}
+
+@media (max-width: 575px) {
+h5.carousel{
+  font-size: 1.6rem;
+  }
+p.carousel {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  }
+}
+
+.img-container {
+  background: #000;
+  overflow: hidden;
+}
+
+.img-overlay:hover {
+  opacity: 0.7; /* Increase the opacity on hover */
+}
+
+.img-overlay {
+    object-fit: cover;
+    opacity: 0.5;
+}
