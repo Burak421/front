@@ -237,21 +237,15 @@ body {
 }
 
 @media (max-width: 575px) {
-  .carousel-inner {
-    flex-wrap: nowrap;
+  .div-bs{
+  padding: 0 100px 0 100px;
   }
 }
 
-.carousel-inner {
-  transition: transform 0.6s ease;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .carousel-item {
+transition: transform 0.3s ease;  
 margin: 0;
-padding: 10px;
-transition: transform 0.6s ease;
+
 }  
 
 
