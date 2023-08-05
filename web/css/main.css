@@ -212,7 +212,6 @@ body {
  font-size: 1rem; 
  color:rgb(255, 255, 255);
  text-shadow: 1px 1px 1px rgb(0, 0, 0);
-
 }
 }
 
@@ -224,8 +223,33 @@ body {
   }
 
 /*Bootstrap carousel*/
+
+/*
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+*/
+
+/*
+#carousel-main {
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+*/
+
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .carousel-item {
-transition: transform 0.3s ease;  
+transition: transform 0.2s ease;  
 margin: 0;
 }
 
@@ -234,9 +258,8 @@ margin: 0;
   overflow: hidden;
 }
 
-
 .img-overlay:hover {
-  opacity: 1; /* Increase the opacity on hover */
+  opacity: 1;
 }
 
 .img-overlay {
@@ -245,25 +268,15 @@ margin: 0;
 }
 
 @media (min-width: 576px) {
-  .carousel-inner {
-  display: flex;
-}
   .carousel-item {
-  display: block;
+  display: flex;
   margin: 0;
   padding: 5px;
-  flex: 0 0 calc(100%/4);
+
 }
 }
 
-@media (min-width: 576px) {
-  /* Hide previous and next buttons */
-  .carousel-control-prev,
-  .carousel-control-next {
-    display: none;
-  }
-}
-
+/*Media Query Medium screens*/
 @media (min-width: 576px) and (max-width: 850px) {
 h5.carousel {
 font-size: 0.85rem;
@@ -277,19 +290,28 @@ span.carousel {
 }
 }
 
+/*Media Query Small screens*/
 @media (max-width: 575px) {
 h5.carousel{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   }
 p.carousel {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 15px;
   }
-.img-carousel {
+.img-overlay {
     max-height: 15rem;
+    min-width: 100vw;
     opacity: 1;
   }
-.div-bs {
-    padding: 0 5rem 0 5rem;
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
   }
 }
