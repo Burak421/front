@@ -235,13 +235,12 @@ body {
 }
 */
 
-/*
+
 #carousel-main {
   width: auto;
   overflow: hidden;
-  white-space: nowrap;
 }
-*/
+
 
 .carousel-inner {
   display: flex;
@@ -272,7 +271,6 @@ margin: 0;
   display: flex;
   margin: 0;
   padding: 5px;
-
 }
 }
 
