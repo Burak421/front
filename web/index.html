@@ -170,14 +170,15 @@
       </div>
   </section>
 
+  
+
+
 
 <!--Bootstrap carousel-->
-<div class="header">
-<h2 class="d-flex flex-column text-center"><strong>Diverse camerapakketten</strong></h2>
-</div>
+<h2 class="container-fluid d-flex flex-column text-center"><strong>Diverse camerapakketten</strong></h2>
 <div class="container-fluid bg-light">
-<div id="carousel-main" class="carousel">
-  <div class="carousel-indicators d-sm-none">
+<div id="carousel-main" class="carousel slide">
+  <div class="carousel-indicators m-0 d-sm-none">
     <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" aria-label="Slide 1" class="active"></button>
     <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -186,9 +187,9 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="img-container rounded-4">
-      <a href="#"><img src="img/tussenwoning.png" class="d-block w-100 img-overlay img-carousel" alt="tussenwoning"></a>
+      <a href="#"><img src="img/tussenwoning.png" class="w-100 img-overlay" alt="tussenwoning"></a>
       <div class="carousel-caption p-0">
-        <div class="d-flex flex-column just align-items-md-start align-items-sm-center carousel-text" aria-disabled="true">
+        <div class="d-flex flex-column align-items-md-start align-items-sm-center" aria-disabled="true">
         <h5 class="carousel"><strong>Tussenwoning</strong></h5>
         <p class="carousel">Vanaf €1349</p>
         <span class="carousel d-none d-md-block">Meer informatie <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
@@ -198,7 +199,7 @@
     </div>
     <div class="carousel-item">
       <div class="img-container rounded-4">
-      <a href="#"><img src="img/vrijstaand.png" class="d-block w-100 img-overlay img-carousel" alt="vrijstaand"></a>
+      <a href="#"><img src="img/vrijstaand.png" class="w-100 img-overlay img-carousel" alt="vrijstaand"></a>
       <div class="carousel-caption p-0">
         <div class="d-flex flex-column align-items-md-start align-items-sm-center">
         <h5 class="carousel"><strong>Vrijstaand</strong></h5>
@@ -210,7 +211,7 @@
     </div>
     <div class="carousel-item">
       <div class="img-container rounded-4">
-      <a href="#"><img src="img/hoekwoning.png" class="d-block w-100 img-overlay img-carousel" alt="hoekwoning">    </a>
+      <a href="#"><img src="img/hoekwoning.png" class="w-100 img-overlay img-carousel" alt="hoekwoning"></a>
       <div class="carousel-caption p-0">
         <div class="d-flex flex-column align-items-md-start align-items-sm-center">
         <h5 class="carousel"><strong>Hoekwoning</strong></h5>
@@ -222,7 +223,7 @@
     </div>
     <div class="carousel-item">
       <div class="img-container rounded-4">
-      <a href="#"><img src="img/bedrijfspand.png" class="d-block w-100 img-overlay img-carousel" alt="bedrijfspand"></a>
+      <a href="#"><img src="img/bedrijfspand.png" class="w-100 img-overlay img-carousel" alt="bedrijfspand">
       <div class="carousel-caption p-0">
         <div class="d-flex flex-column align-items-md-start align-items-sm-center">
         <h5 class="carousel"><strong>Bedrijfspand</strong></h5>
@@ -230,14 +231,15 @@
         <span class="carousel d-none d-md-block">Meer informatie <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
         </div>
       </div>
+      </a>
     </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+  <button class="carousel-control-prev d-sm-none" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
     <span class="icon" aria-hidden="true"><i class="fa-solid fa-left-long fa-2xl"></i></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+  <button class="carousel-control-next d-sm-none" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
     <span class="icon" aria-hidden="true"><i class="fa-solid fa-right-long fa-2xl"></i></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -658,10 +660,5 @@
 
   <!-- AOS JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-
-<!-- Custom JavaScript file -->
-<script src="js/script2.js"></script>
-
 </body>
 </html>
