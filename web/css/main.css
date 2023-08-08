@@ -2,21 +2,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
-html {
-  font-size: 1rem; /* Equivalent to 16px (smallest base font size for the document) */
-}
-  
 body {
-  font-size: 0.875rem; /* Equivalent to 14px (smallest font size for body text) */
-  }
-  
+  font-size: 0.9rem;
+}
+
 @media (max-width: 576px) {
   h2.text-center {
   font-size: 1.2rem;
   }
 }
-
-
 
 .bold {
   font-weight:bold;
@@ -127,34 +121,8 @@ body {
 @media (max-width: 576px) {
   .navbar-collapse {
     position: fixed;
-    top: -100%;
-    right: 0;
-    max-width: 50%;
-    height: auto;
-    transition: all 0.4s ease;
-    text-align: right;
-    background-color: #eecece;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    visibility: visible;
+    visibility:hidden;
   }
-
-  /* Adjust the height when the second navbar is collapsing */
-  .navbar-collapse.collapsing {
-    height: auto;
-    margin-right: 0;
-    right: 0;
-    transition: all 0.2s ease;
-  }
-
-  /* Adjust the position when the second navbar is open */
-  .navbar-collapse.show {
-  top: 6rem;
-  right: 10px;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
 }
 
 
@@ -201,7 +169,6 @@ body {
 
     .section-with-img-2 {
       height: 25rem;
-      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -217,7 +184,7 @@ body {
 
 @media (min-width: 470px) and (max-width: 576px) {
   .smaller-font {
-   font-size: 1rem; 
+   font-size: 1.1rem; 
    color: rgb(0, 0, 0);
   }
   }
@@ -298,5 +265,9 @@ p.carousel {
   width: 100%;
   padding: 10px;
   color: #fff;
+  }
+
+  p.footer{
+    padding:0 5vh 0 5vh;
   }
 }
