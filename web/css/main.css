@@ -6,6 +6,52 @@ body {
   font-size: 0.9rem;
 }
 
+/*Breaking Points*/
+body::before{
+  content: "XS";
+  color: black;
+  background-color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 9999;
+}
+
+@media (min-width: 576px) {
+  body::before {
+    content: "SM";
+  }
+}
+
+@media (min-width: 768px) {
+  body::before {
+    content: "MD";
+  }
+}
+
+@media (min-width: 992px) {
+  body::before {
+    content: "LG";
+  }
+}
+
+@media (min-width: 1200px) {
+  body::before {
+    content: "XL";
+  }
+}
+
+@media (min-width: 1400px) {
+  body::before {
+    content: "XXL";
+  }
+}
+/*Breaking Points*/
+
+
+
 @media (max-width: 576px) {
   h2.text-center {
   font-size: 1.2rem;
@@ -40,6 +86,20 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .card-title-4,
+  .card-text-4,
+  .card-btn-4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-center{
+    text-align: center;
+  }
+}
+
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
@@ -55,7 +115,7 @@ body {
 }
 
 #navbarimg {
-  width: 30vw; /* Relative size for the logo based on viewport width */
+  width: 30svw;
 }
 
 /* For screens up to 576px */
@@ -136,11 +196,7 @@ body {
     padding-left: 50px;
 }
 }
-@media (max-width: 576px) {
-  .btn-center{
-    text-align: center;
-  }
-}
+
 
 .section-with-img {
   height: 23rem;
@@ -269,5 +325,12 @@ p.carousel {
 
   p.footer{
     padding:0 5vh 0 5vh;
+    padding:0 5svh 0 5svh;
+  }
+}
+
+@media (min-width:768px){
+  .img-bar{
+    border-radius: 0 1rem 1rem 0;
   }
 }
